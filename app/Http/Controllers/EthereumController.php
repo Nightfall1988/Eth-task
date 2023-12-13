@@ -58,9 +58,7 @@ class EthereumController extends Controller
         });
 
         foreach ($filteredTransactions as $transaction) {
-            var_dump($transaction['topics']);
-            echo "<br>";
-            echo "<br>";
+            var_dump($transaction);
             echo "<br>";
         }
         return response()->json(['transactions' => $filteredTransactions]);
